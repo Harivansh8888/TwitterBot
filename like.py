@@ -1,8 +1,8 @@
 import tweepy
 import time
 
-auth = tweepy.OAuthHandler('','')
-auth.set_access_token('','')
+auth = tweepy.OAuthHandler('','') #removed my authentication keys from here 
+auth.set_access_token('','') #removed my authentication keys from here
 api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 
 user = api.me()
